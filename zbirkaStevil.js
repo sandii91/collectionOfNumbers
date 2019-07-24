@@ -18,13 +18,8 @@ function myFunction() {
     }
     document.getElementById("middle").innerHTML = average;
    
-    for(k = 0; k > average; k++) {
-        if(k > average) {
-            console.log(k);
-            document.getElementById("bigger").innerHTML = k;
-        }
     }
-}
+
  
    
 
