@@ -4,6 +4,7 @@ function myFunction() {
     var k;
     var totalSum = 0;
     var average;
+    var arr2 = []
     var arr = [];
     var arr = prompt(" Insert a number ").split(",");
     for (i = 0; i <9; i++) {
@@ -17,7 +18,13 @@ function myFunction() {
         var average = totalSum/numCnt; 
     }
     document.getElementById("middle").innerHTML = average;
-   
+    
+    	for(j in arr) {
+		 if(arr[j] > average) {
+           arr2.push(arr[j])
+		 }
+		}
+    document.getElementById("up").innerHTML = arr2;
     }
 
  
